@@ -1,0 +1,53 @@
+{
+  "name": "node-api",
+  "version": "1.0.0",
+  "description": "NodeJS REST API",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@code.gitlab.camcyber.com:camcyber-core/node-api.git"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api"
+  ],
+  "author": "camcyber.leanghour",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "@types/morgan": "^1.9.2",
+    "@types/node": "^15.0.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ioredis": "^4.28.2",
+    "jsonwebtoken": "^8.5.1",
+    "kafkajs": "^1.15.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.7",
+    "pdfkit": "^0.12.3",
+    "pg": "^8.6.0",
+    "redis": "^4.0.1",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.2",
+    "ts-node": "^9.1.1",
+    "typeorm": "^0.2.32"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts",
+    "exec": "ts-node src/index.ts"
+  }
+}
